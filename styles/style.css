@@ -1,3 +1,6 @@
+@font-face { font-family: timepiece; src: url('Timepiece.TTF'); } 
+ 
+
 html, body {
 	height: 100%;
 	margin: 0;
@@ -7,7 +10,7 @@ html, body {
 
 .bg {
 	height: 100%;
-	background: #B8C6D1;
+	background: #07191F;
   	width: 100%;
  
   	opacity: 1;
@@ -51,6 +54,8 @@ html, body {
 }
 
 .name{
+    color: #F25735;
+    font-family: timepiece;
 	font-size: 60px;
 	text-align: center;
     position: relative;
