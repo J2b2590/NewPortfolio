@@ -1,27 +1,74 @@
-@font-face { font-family: timepiece; src: url('Timepiece.TTF'); } 
+
  
 
 html, body {
 	height: 100%;
 	margin: 0;
+    background-image: url(../assets/jab_logo_black.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position-y: 50%;
+    background-size: 10%;
+    background-attachment: fixed;
+
+
+
 }
 
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0; 
+    padding-left: 0; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    vertical-align: middle;
+    border-style: none;
+    width: 10%;
+    margin-top: 10%;
+}
+.imgLogoBackground{
+
+    z-index: 1000;
+}
+
+.vsImg{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.fixed{
+    position: fixed;
+    display: none;
+}
 
 
 .bg {
 	height: 100%;
-	background: #07191F;
+	background: #1e1a1a;
   	width: 100%;
  
   	opacity: 1;
 }
 
-.downArrow{
-	width: 6vh;
-    margin-top: 25%;
+.downArrow, .projButtonShow{
+	width: 8vh;
     display: block;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+    color: red; 
 }
 
 
@@ -37,30 +84,78 @@ html, body {
 }
 
 
-.topNav{
-	position: fixed;
-	margin-left: 50%;
-
-}
-
-.homeLinks{
-	
-	font-size: 2vw;
-	text-align: right; 
-}
-.link{
-	color: black;
-	padding: 20px; 
-}
-
 .name{
-    color: #F25735;
-    font-family: timepiece;
-	font-size: 60px;
+    color: white;
+    font-family: 'M PLUS 1p', sans-serif;
+	font-size: 15vh;
 	text-align: center;
     position: relative;
     top: 25%;
 	}
+
+.projText{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e1a1a;
+    line-height: 1.5em;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    line-height: 1.5em;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.buttonLinks{
+    width: 14%;
+    /* position: absolute; */
+    bottom: 100px;
+    left: 280px;
+    padding: 5px;
+    display: inline-flex;
+}
+
+.cta{
+    width: 15%;
+    /* position: absolute; */
+    bottom: 100px;
+    left: 280px;
+    padding: 5px;
+    display: inline-flex;
+
+}
+
+.projSummary{
+    position: absolute;
+    padding: 15px 30px;
+    color: #fff;
+    text-align: center;
+    /* width: 300px; */
+    align-self: center;
+}
+
+.countryGent{
+    margin-top: 20%;
+
+}
+
+.projDetail{
+    font-weight: 200;
+}
 
 p{
 	font-size: 20px;
@@ -77,36 +172,18 @@ p{
 
 .row{
 	text-align: center;
+    margin: 0;
+    
 }
-/*.carousel {
-    height: 90%;
-    width: 100%;
-    margin-bottom: 60px;
-}*/
-/* Since positioning the image, we need to help out the caption */ 
-/*.carousel-caption {
-    z-index: 10;
-}*/
-/*Declare heights because of positioning of img element */
-.carousel .item {
-    width: 100%;
-    height: 500px;
-    background-color: #777;
+
+.col{
+    padding: 0;
 }
-/*.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 500px;
-}*/
-/*@media (min-width: 768px) {
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 21px;
-        line-height: 1.4;
-    }
-}*/
+
+.iconLink{
+    padding: 5px;
+}
+
 
 
 
