@@ -58,7 +58,6 @@ html, body {
 
 .vsImg{
 
-
     width: 100%;
 
 }
@@ -147,6 +146,7 @@ html, body {
     /* position: absolute; */
     bottom: 100px;
     left: 280px;
+    text-align: center;
     padding: 5px;
     display: inline-flex;
 
