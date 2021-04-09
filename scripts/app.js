@@ -12,20 +12,18 @@ $(window).scroll(function () {
 });
 console.log($("#projButton"));
 
-let projButton = document.getElementById("projButton");
+// let projButton = document.getElementById("projButton");
 
-// $("#projButton").addEventListener("click", () => console.log("Clicked Button"));
-
-projButton.addEventListener("click", () => {
-  console.log("Clicked Button");
-});
-
-// $("#projButton").click(function () {
-//   console.log("CLICKED BUTTON");
-//   //   $("html,body").animate(
-//   //     {
-//   //       scrollTop: $(".projSummary").offset().top,
-//   //     },
-//   //     "slow"
-//   //   );
+// projButton.addEventListener("click", () => {
+//   console.log("Clicked Button");
 // });
+
+$("#projButton").click(function () {
+  console.log("CLICKED BUTTON");
+  $("html,body").animate(
+    {
+      scrollTop: $(".projSummary").offset().top,
+    },
+    "slow"
+  );
+});
