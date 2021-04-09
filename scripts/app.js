@@ -10,13 +10,22 @@ $(window).scroll(function () {
     $(".bg").removeClass("show");
   }
 });
+console.log($("#projButton"));
 
-$("#projButton").click(function () {
-  console.log("CLICKED BUTTON");
-  //   $("html,body").animate(
-  //     {
-  //       scrollTop: $(".projSummary").offset().top,
-  //     },
-  //     "slow"
-  //   );
+let projButton = document.getElementById("projButton");
+
+// $("#projButton").addEventListener("click", () => console.log("Clicked Button"));
+
+projButton.addEventListener("click", () => {
+  console.log("Clicked Button");
 });
+
+// $("#projButton").click(function () {
+//   console.log("CLICKED BUTTON");
+//   //   $("html,body").animate(
+//   //     {
+//   //       scrollTop: $(".projSummary").offset().top,
+//   //     },
+//   //     "slow"
+//   //   );
+// });
