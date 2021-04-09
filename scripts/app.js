@@ -10,20 +10,35 @@ $(window).scroll(function () {
     $(".bg").removeClass("show");
   }
 });
+
 console.log($("#projButton"));
-
-// let projButton = document.getElementById("projButton");
-
-// projButton.addEventListener("click", () => {
-//   console.log("Clicked Button");
-// });
-
+// on click to project, about , and video
 $("#projButton").click(function () {
   console.log("CLICKED BUTTON");
   $("html,body").animate(
     {
-      scrollTop: $(".projSummary").offset().top,
+      scrollTop: $(".container-fluid").offset().top,
     },
-    "slow"
+    2000
+  );
+});
+
+$("#aboutButton").click(function () {
+  console.log("about CLICKED BUTTON");
+  $("html,body").animate(
+    {
+      scrollTop: $(".aboutMe").offset().top,
+    },
+    2000
+  );
+});
+
+$("#miscButton").click(function () {
+  console.log("misc CLICKED BUTTON");
+  $("html,body").animate(
+    {
+      scrollTop: $(".countryGent").offset().top,
+    },
+    2000
   );
 });

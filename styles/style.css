@@ -31,7 +31,7 @@ body {
 
 /*------------------Nav------------------*/
 
-.nav{
+.nav {
   position: fixed;
   background: white;
   display: -ms-flexbox;
@@ -132,6 +132,7 @@ body {
 .aboutMe {
   background-color: #1e1a1a;
   columns: white;
+  margin: auto;
 }
 
 .buttonLinks {
