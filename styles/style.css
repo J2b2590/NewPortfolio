@@ -48,6 +48,10 @@ body {
   width: 100%;
 }
 
+:is(#projButton, #aboutButton, #miscButton) {
+  margin: auto;
+}
+
 /*------------------Nav------------------*/
 .logo {
   vertical-align: middle;
