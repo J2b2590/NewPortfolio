@@ -54,6 +54,9 @@ body {
   font-size: 1rem;
   text-decoration: none;
 }
+:is(#projButton, #aboutButton, #miscButton):hover {
+  cursor: grab;
+}
 
 /*------------------Nav------------------*/
 .logo {
