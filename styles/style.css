@@ -46,10 +46,13 @@ body {
   text-align: center;
   margin: auto;
   width: 100%;
+  padding: 1%;
 }
 
 :is(#projButton, #aboutButton, #miscButton) {
   margin: auto;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 /*------------------Nav------------------*/
@@ -103,7 +106,7 @@ body {
 .name {
   color: white;
   font-family: Avenir;
-  font-size: 15vh;
+  font-size: 4em;
   text-align: center;
   position: relative;
   top: 25%;

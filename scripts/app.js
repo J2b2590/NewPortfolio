@@ -11,17 +11,17 @@ $(window).scroll(function () {
   }
 });
 
-console.log($("#projButton"));
-// on click to project, about , and video
 $("#projButton").click(function () {
   console.log("CLICKED BUTTON");
   $("html,body").animate(
     {
-      scrollTop: $(".container-fluid").offset().top,
+      scrollTop: $(".projects").offset().top,
     },
     2000
   );
 });
+
+
 
 $("#aboutButton").click(function () {
   console.log("about CLICKED BUTTON");
